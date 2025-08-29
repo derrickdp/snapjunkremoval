@@ -1,0 +1,755 @@
+/* This CSS file is applied to both the front end of ERS, and the back end (/cp) */
+/* These are some example media tags:
+@media (max-width: 480px) {
+@media (max-width: 767px) {
+@media (max-width: 768px) {
+@media (max-width: 959px) {
+@media (min-width: 1220px) {
+@media (min-width: 480px) {
+@media (min-width: 768px) and (max-width: 959px) {
+@media (min-width: 768px) {
+@media (min-width: 960px) {
+@media print {
+@media screen and (max-width: 400px) {
+@media screen {
+*/
+
+@media print {
+	.no-print,
+	.no-print * {
+		display: none !important;
+	}
+}
+
+.ajax_overlay_greyed_out
+{
+	opacity: .40;
+	filter: alpha(opacity=40);
+	-moz-opacity: 0.4;
+	width: 100%;
+}
+
+.ers_store_table,
+.ers_category_table,
+.ers_item_table
+{
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.row-spacing
+{
+	margin-bottom: 15px;
+}
+
+.row-spacing-small
+{
+	margin-bottom: 1em;
+}
+
+#item_book_for_date_text
+{
+	color: #aaa;
+}
+
+.button_back
+{
+	background: none repeat scroll 0 0 #b4c841;
+	border: 1px solid #6b6b6b;
+	border-radius: 0.5em;
+	float: left;
+	font-size: 9pt;
+	font-family: Verdana, Arial;
+	padding: 0.2em 1.3em .2em 1em;
+	position: relative;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.button_book,
+.button_add
+{
+	background: none repeat scroll 0 0 #b4c841;
+	border: 1px solid #6b6b6b;
+	border-radius: 0.5em;
+	float: left;
+	font-size: 12pt;
+	font-family: Verdana, Arial;
+	padding: 0.2em 1.3em .2em 1em;
+	position: relative;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.button_book_disabled
+{
+	background-color: #F8F8F8 !important;
+	color: #AA6060 !important;
+	cursor: not-allowed !important;
+	display: inline-block;
+	font-size: 13px !important;
+	font-style: italic !important;
+	font-weight: bold !important;
+	padding: 8px 16px 4px 16px !important;
+	text-transform: none !important;
+}
+
+.button_finalizeOrder
+{
+	background-color: #b4c841;
+	border: 1px solid #6b6b6b;
+	border-radius: 0.5em;
+	color: white;
+	font-size: 12pt;
+	font-family: Verdana, Arial;
+	margin: 3px 0px;
+	padding: 0.2em 1.3em .2em 1em;
+	text-transform: uppercase;
+}
+
+.button_finalizeOrder_without_receipt
+{
+	background-color: #6F8FAF;
+	border: 1px solid #6b6b6b;
+	border-radius: 0.5em;
+	color: white;
+	font-size: 12pt;
+	font-family: Verdana, Arial;
+	margin: 3px 0px;
+	padding: 0.2em 1.3em .2em 1em;
+	text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+	.hide_for_mobile
+	{
+		display: none;
+	}
+}
+
+/**
+ * The following rules are implemented, to serve as default settings for basic
+ * responsive/fluid design layout for browse items, browse categories, items
+ */
+.responsive_browse_items_wrapper
+{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.responsive_browse_items_item_wrapper
+{
+	width: 250px;
+	position: relative;
+	float: left;
+	cursor: pointer;
+}
+
+.browse_items td
+{
+	padding-bottom: 50px;
+	position: relative;
+}
+
+.green_asterisk
+{
+	color: #008800;
+}
+
+.ers_button_default,
+.ers_button_grey
+{
+	background: #4e4e4e;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #4e4e4e 0%, #1e1e1e 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #4e4e4e 0%, #1e1e1e 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #4e4e4e 0%, #1e1e1e 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e4e4e', endColorstr='#1e1e1e', GradientType=0);
+	/* IE6-9 */
+	border: 0px solid #000;
+	border-radius: 1rem;
+	color: #fff;
+}
+
+.ers_button_silver
+{
+	background: #E3E3E3;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #E3E3E3 0%, #F7F7F7 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #E3E3E3 0%, #F7F7F7 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #E3E3E3 0%, #F7F7F7 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E3E3E3', endColorstr='#F7F7F7', GradientType=0);
+	/* IE6-9 */
+	border: 1px solid #AFAFAF;
+	border-radius: 1rem;
+	color: #000;
+}
+
+.ers_button_default,
+.ers_button_grey,
+.ers_button_silver
+{
+	padding: 0.4rem 1.2rem;
+	vertical-align: middle;
+}
+
+.ers_button,
+.ers_button_default,
+.ers_button_grey,
+.ers_button_silver
+/* To be applied to all <button> tags, regardless of whether it's a wordpress plugin or not. */
+
+
+{
+	cursor: pointer;
+	margin: 2px;
+	white-space: nowrap;
+	/*margin:15px 0; margins are spacing buttons out too much, better to do it on a page by page basis*/
+}
+
+.greytext
+{
+	color: #aaaaaa;
+}
+
+
+#ers_timespan_table>tbody>tr>td:first-child
+{
+	min-width: 82px;
+}
+
+.dev
+{
+	display: none;
+}
+
+.survey_form_div
+{
+	color: #000;
+}
+
+table.survey_form_table td
+{
+	color: #000 !important;
+}
+
+.glow_text_large_white
+{
+	text-shadow: 1px 1px 8px rgba(255, 255, 255, 1), -1px -1px 8px rgba(255, 255, 255, 1);
+}
+
+.glow_text_medium_white
+{
+	text-shadow: 1px 1px 8px rgba(255, 255, 255, 1), -1px -1px 8px rgba(255, 255, 255, 1);
+}
+
+.glow_text_small_white
+{
+	text-shadow: 1px 1px 8px rgba(255, 255, 255, 1), -1px -1px 8px rgba(255, 255, 255, 1);
+}
+
+.glow_text_large_black
+{
+	text-shadow: 1px 1px 8px rgba(0, 0, 0, 1), -1px -1px 8px rgba(0, 0, 0, 1);
+}
+
+.glow_text_medium_black
+{
+	text-shadow: 1px 1px 8px rgba(0, 0, 0, 1), -1px -1px 8px rgba(0, 0, 0, 1);
+}
+
+.glow_text_small_black
+{
+	text-shadow: 1px 1px 8px rgba(0, 0, 0, 1), -1px -1px 8px rgba(0, 0, 0, 1);
+}
+
+.general_notification_white
+{
+	color: #fff;
+	text-shadow: 1px 1px 8px rgba(0, 0, 0, 1), -1px -1px 8px rgba(0, 0, 0, 1);
+	text-align: center;
+}
+
+.general_notification_black
+{
+	color: #000;
+	text-shadow: 1px 1px 8px rgba(255, 255, 255, 1), -1px -1px 8px rgba(255, 255, 255, 1);
+	text-align: center;
+}
+
+.more_info_text
+{
+	font-size: 16px;
+	font-weight: bold;
+	margin: 3px;
+}
+
+/* Adam DeAloe [2019-02-28] This is for Weather Forecast by Zip */
+.weather_wrapper
+{
+	font-family: "Arial", "Verdana";
+	font-size: 12px;
+	color: #5177AF;
+	border: 1px solid #7799CC;
+	border-radius: 4px;
+	background: #D5E3F7;
+	line-height: 1em;
+}
+
+.weather_right
+{
+	padding-top:7px;
+	line-height: 1em;
+}
+
+.weather_left
+{
+	float:left;
+}
+
+/* End Weather Forecast by Zip stuff ****/
+
+.ers_activity_indicator
+{
+	animation: ERSActivity 0.4s linear infinite;
+	border-top: 6px solid rgba(34, 78, 129, 0.5);
+	border-right: 6px solid rgba(219, 123, 68, 0.5);
+	border-bottom: 6px solid rgba(231, 169, 77, 0.5);
+	border-left: 6px solid white;
+	border-radius: 50%;
+	display: inline-block;
+	height: 40px;
+	vertical-align: middle;
+	width: 40px;
+}
+
+@keyframes ERSActivity
+{
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.ers_blink
+{
+	animation: ers_blinker 1s ease-in-out infinite;
+}
+
+@keyframes ers_blinker
+{
+	50%
+	{
+		opacity: 0.25;
+	}
+}
+
+.item_price {
+	margin-left: 1em;
+}
+
+.report_can_add_filter
+{
+	color: #333366;
+	cursor: pointer;
+}
+
+.report_can_add_filter:hover
+{
+	color: #2222CC;
+}
+
+.waiver_station_background
+{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat-y;
+	background-size: 100% auto;
+	width: 100%;
+}
+
+.datetime_selector_nav_buttons
+{
+	cursor: pointer;
+	margin: 0px 10px;
+}
+
+.datetime_select
+{
+	height: 24px;
+}
+
+.white_bg
+{
+	background-color: #FFF;
+}
+
+
+@media screen AND (max-width: 991px)
+{
+	.export_buttons
+	{
+		margin-top: 10px !important;
+	}
+}
+
+.buttons_dmy
+{
+	width: fit-content;
+}
+
+.floating_window
+{
+	height: 100vh;
+	opacity: 0.97;
+	position: fixed;
+	text-align: center;
+	top: 0px;
+	visibility: hidden;
+	width: 100vw;
+	z-index: 112000;
+}
+
+.floating_window:before
+{
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.floating_window_table
+{
+	background-color: #FFFFFF;
+	border-radius: 20px;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	max-width: calc(100vw - 16px);
+	min-width: calc(100vw - 32px);
+	vertical-align: middle;
+}
+
+#loading_spinner_div,
+.loading_spinner_div
+{
+	height: 0px;
+	text-align: center;
+}
+
+#loading_spinner_div:before,
+.loading_spinner_div
+{
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.name_diff_warning
+{
+	background-color: #FFF5F5;
+	border: 1px solid #EEEEEE;
+	color: #883333;
+	font-size: 12px;
+	margin: 4px 3px 8px 3px;
+	max-width: 300px;
+	padding: 8px 5px;
+}
+
+.name_diff_warning td
+{
+	padding: 1px;
+}
+
+.ERS_loader_wrapper
+{
+	color: #777777;
+	height: 85%;
+	left: 0px;
+	position: absolute;
+	text-align: center;
+	top: 0px;
+	width: 100%;
+}
+
+.ERS_loader_wrapper:before
+{
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.ERS_shaded_loader
+{
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 100%;
+	position: fixed;
+	z-index: 1000000;
+}
+
+.ERS_loader
+{
+	animation: ERS_loader_spin 0.4s linear infinite;
+	border-top: 6px solid rgba(34, 78, 129, 0.5);
+	border-right: 6px solid rgba(219, 123, 68, 0.5);
+	border-bottom: 6px solid rgba(231, 169, 77, 0.5);
+	border-left: 6px solid white;
+	border-radius: 50%;
+	display: inline-block;
+	height: 32px;
+	margin: 8px;
+	vertical-align: middle;
+	width: 32px;
+}
+
+@keyframes ERS_loader_spin
+{
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+@media (min-width: 500px)
+{
+	.floating_window_table
+	{
+		min-width: 0px;
+	}
+}
+
+.ers_general_btn
+{
+	background-color: #5BC0DE;
+	border-color: #46B8DA;
+	border-radius: 6px;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	margin: 12px 8px 4px 8px;
+	padding: 8px 20px;
+	pointer-events: auto;
+	transition: all 0.2s ease-in-out;
+}
+
+.ers_general_btn_green
+{
+	background-color: #5CB85C;
+	border-color: #4CAE4C;
+}
+
+.ers_general_btn_red
+{
+	background-color: #D9534F;
+	border-color: #D43F3A;
+}
+
+.ers_general_btn:hover
+{
+	filter: brightness(1.14);
+}
+
+.ers_element_disabled
+{
+	filter: saturate(40%);
+	opacity: 0.7;
+	pointer-events: none;
+}
+
+.ers_tooltip
+{
+	display: inline-block;
+	position: relative;
+}
+
+.ers_tooltip .ers_tooltiptext
+{
+	background-color: #FFFFFF;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 1px 5px;
+	color: #444444;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	left: 3px;
+	padding: 5px 3px;
+	position: absolute;
+	text-align: center;
+	top: 22px;
+	visibility: hidden;
+	width: 120px;
+	z-index: 1;
+}
+
+@media (min-width: 500px)
+{
+	.ers_tooltip:hover .ers_tooltiptext
+	{
+		visibility: visible;
+	}
+
+	.ers_tooltiptext:hover
+	{
+		visibliity: visible;
+	}
+}
+
+.ers_route_alerts_container
+{
+	background-color: #FFFAFA;
+	border: 1px solid #FFCCCC;
+	margin-bottom: 16px;
+	padding: 6px;
+}
+
+.ers_route_alert_title
+{
+	color: #990000;
+	font-size: 13px;
+	padding: 2px 4px;
+}
+
+.ers_route_alert_message
+{
+	font-size: 12px;
+	padding: 2px 4px;
+	text-align: left;
+}
+
+.ers_route_alert_divider
+{
+	background-color: #FFCCCC;
+	height: 1px;
+	margin: 8px 2px 4px 2px;
+}
+
+.ers_abs_panel_left
+{
+	opacity: 0 !important;
+	transform: translate(-100%, 0) translate3d(0, 0, 0) !important;
+}
+
+.ers_abs_panel_right
+{
+	opacity: 0 !important;
+	transform: translate(100%, 0) translate3d(0, 0, 0) !important;
+}
+
+.crm-action-btn
+{
+	background-color: #07A;
+	border-radius: 8px;
+	color: #FFF;
+	cursor: pointer;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 6px;
+	margin-bottom: 12px;
+	margin-left: 0px;
+	margin-right: 12px;
+	margin-top: 0px;
+	max-width: 160px;
+	min-height: 64px;
+	padding: 6px;
+	padding-left: 12px;
+	padding-right: 12px;
+	text-align: center;
+	transform: scale(1);
+	transition: all 0.2s ease-in-out;
+	vertical-align: top;
+}
+
+.crm-action-btn:hover
+{
+	filter: brightness(1.1);
+	transform: scale(1.05);
+}
+
+.crm-action-btn-service
+{
+    background-color: #FDFD96;
+    border: 1px solid #AAAAAA;
+    color: #444444;
+	padding-left: 11px;
+	padding-right: 11px;
+}
+
+.crm_event_button
+{
+	background-color: #77C;
+	border: solid 1px #227;
+	border-radius: 6px;
+	color: #FFF;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 10px;
+	margin: 1px;
+	padding: 2px 8px;
+	transform: scale(1);
+	transition: all 0.2s ease-in-out;
+}
+
+.crm_event_button:hover
+{
+	filter: brightness(1.04);
+	transform: scale(1.02);
+}
+
+.crm_general_btn1
+{
+	background-color: #F5FFF5;
+	border: 1px solid #EEEEEE;
+	border-radius: 4px;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: inline-block;
+	min-width: 150px;
+	margin: 8px;
+	padding: 4px 8px;
+	text-align: center;
+}
+
+.crm_general_btn1:hover
+{
+	background-color: #CCFFCC;
+	border: 1px solid #99CC99;
+}
+
+.ers_no_scrollbar
+{
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+.ers_no_scrollbar::-webkit-scrollbar
+{
+	display: none;
+}
+
+.ers_search_btn
+{
+	background-color: #FFFFFF;
+	border: 1px solid #B7B7B7;
+	border-radius: 8px;
+	font-size: 14px;
+	padding: 1px 4px 1px 5px;
+}
+
+.cart_item_checked_out
+{
+	background-color: #f4f4ff;
+	border: 1px solid #cdcddd;
+	border-radius: 2px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 11px;
+	margin: 8px 4px -2px 4px;
+	padding: 4px 8px;
+	text-align: center;
+}

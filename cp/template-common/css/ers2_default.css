@@ -1,0 +1,169 @@
+.ers2_shop_header_hot, .ers2_shop_header_hot a, .ers2_shop_header_hot a:hover, .ers2_shop_header_hota:visited, .ers2_shop_header_hot a:link
+{
+	color:#FFFFFF !important;
+	font-size:12px  !important;
+	font-family:Arial  !important; 
+	text-decoration:none  !important;
+}
+	
+.ers2_shop_header_text
+{
+	color:#c1c1c1;
+	font-size:12px;
+	font-family:Arial;
+}
+	
+.ers2_shop_itemized_text
+{
+
+}
+	
+.ers2_shop_itemized_hot
+{
+
+}
+	
+.ers2_submit_first
+{
+	color:#071955;
+}
+
+
+
+
+
+
+
+/*********  ERS 1 Specific Stuff, for hte sake of backward compatibility: *********************/
+/* This line is to ensure this is loading okay.  Just class some text as adamstest, if it's huge and green, it's working. */
+.adamstest
+{
+	font-size:40px;
+	color:#00ff00;
+}
+/*************************************************/
+
+
+/*** ERS 1.0 Specific Stuff.  All classes should begin with "ers10" to avoid any possible overlapping names, unless a name already existed before the creation of this file (i.e. the ID card_payment_area)***/
+/*** Everything set in here was copied from their original in-line styles.  Don't change this file unless you're positive you wish to make your change global ***/
+/*** The purpose of this file is to liberate styles from in-line (in stone) so that you can customize the styles in the templates (not here, these are just for default settings) ***/
+/*** Adam DeAloe ***/
+
+.card_payment_area_class
+{
+	text-align:left;
+}
+
+.form_table
+{
+	text-align:left;
+}
+
+.ers10form1td
+{
+	text-align:left;
+}
+
+.ers10_store_main_menu_table
+{
+	/* This is only here as a placeholder.
+	This is used on line 267 of store.php, I added this class, there was none before, nor was there an inline style.
+	I needed the ability to center this, however this should probably remain empty in this .css file, however you can add
+	this class in the css definition for any template as needed.
+	Adam DeAloe 4.11.12.
+	*/ 
+}
+
+.ers10CallOffice
+{
+	border:solid 1px black; 
+	background-color:#dddddd;
+}
+
+
+#card_payment_area
+{
+ 	width:600px; 
+	height:475px;  
+}
+
+
+.ers10_logo_img
+{
+}
+
+h1
+{
+	font-weight:normal;
+	font-size:2em;
+}
+
+
+.ers10_your_cart 
+{
+	
+}
+
+.ers10_empty_cart 
+{
+	
+}
+
+
+.ers10_merchandise_cost 
+{
+	
+}
+
+.ers10_travel_fee 
+{
+	
+}
+
+.ers10_cart_tax 
+{
+	
+}
+
+.ers10_cart_total 
+{
+	
+}
+
+.ers10_cart_final_total 
+{
+	
+}
+
+.ers10_store_header_inner_table
+{
+	
+}
+
+.ers10_nav_table
+{
+	/* If, for example, you want to center the menu, do this:
+	
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+
+	... but of course only do it on a template-by-template basis, not in here where it's global. */
+}
+
+.ers10_slider_b
+{
+/*	display:none; */
+}
+
+
+.ws_bulframe
+{
+	display:none !important;
+}
+
+
+norunscript
+{
+	display:none;
+}

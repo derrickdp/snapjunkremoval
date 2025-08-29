@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+Disallow: /cp/
+Disallow: /order-by-date/
+Disallow: /cart/
+Allow: /cp/images/
+Allow: /cp/upload/
+Allow: /cp/resources/css/
+Allow: /cp/resources/js/
+Allow: /cp/resources/tigra/
+Allow: /cp/resources/images/
+Allow: /cp/template-common/css/
+Allow: /cp/resources/template-common/
+
+Disallow: /cdn-cgi/
+
+User-agent: Googlebot
+Allow: /
+
+User-Agent: bingbot
+Allow: /
+
+Sitemap: https://www.snapjunkremoval.com/sitemap.xml
